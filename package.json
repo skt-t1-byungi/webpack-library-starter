@@ -5,7 +5,7 @@
   "main": "lib/library.js",
   "scripts": {
     "build": "webpack --mode=build",
-    "dev": "webpack --progress --colors --watch --mode=dev",
+    "watch": "webpack --progress --colors --watch --mode=dev",
     "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
   },
   "devDependencies": {
@@ -20,25 +20,8 @@
     "eslint-loader": "1.1.0",
     "mocha": "2.3.4",
     "webpack": "1.12.9",
+    "webpack-bundle-analyzer": "^2.1.1",
     "yargs": "3.32.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/krasimir/webpack-library-starter.git"
-  },
-  "keywords": [
-    "webpack",
-    "es6",
-    "starter",
-    "library",
-    "universal",
-    "umd",
-    "commonjs"
-  ],
-  "author": "Krasimir Tsonev",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/krasimir/webpack-library-starter/issues"
-  },
-  "homepage": "https://github.com/krasimir/webpack-library-starter"
+  "license": "MIT"
 }
